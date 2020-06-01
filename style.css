@@ -1,69 +1,77 @@
+    body,
+    html {
+        display: flex;
+        width: 100%;
+        font-family: 'Lato', sans-serif;
+        margin: 0;
+    }
+    
     header {
+        display: flex;
         position: fixed;
+        margin-top: 0px;
+        margin-left: 0px;
         background-color: #ffffff;
         width: 100%;
         height: 70px;
     }
     
-    body {
-        background-color: black;
-        margin: 0px;
+    .navbar {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
     }
     
-    .logo {
+    nav {
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+        max-width: 1024px;
+        align-items: center;
+    }
+    
+    #logo {
         width: 70px;
         height: 11px;
-        margin-top: 27px;
-        margin-left: 240px;
     }
     
     .menu {
-        font-family: 'Lato', sans-serif;
+        display: flex;
         font-weight: 700;
         font-size: 11px;
         text-transform: uppercase;
-        margin-top: -27px;
-        margin-left: 361px;
     }
     
-    .tag-menu {
+    .tab-menu {
+        width: 100%;
+        margin-left: 111px;
+    }
+    
+    .link-menu {
+        width: calc( 100% / 5);
+        padding-right: 30px;
         text-decoration: none;
         color: #797979;
     }
     
-    .menu>p {
-        float: left;
-        margin-right: 25px;
-    }
-    
-    #btn-login {
+    .btn-nav {
         width: 110px;
         height: 38px;
-        font-family: 'Lato', sans-serif;
         font-size: 13px;
         font-weight: 400;
         background-color: #f9ba48;
         box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
         color: #ffffff;
         border: 0px;
-        border-radius: 5px;
+        border-radius: 3px;
     }
     
-    #btn-contact {
-        width: 110px;
-        height: 38px;
-        font-family: 'Lato', sans-serif;
-        font-size: 13px;
-        font-weight: 400;
-        background-color: #094b58;
-        box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
-        color: #ffffff;
-        border: 0px;
-        border-radius: 5px;
+    .btns-nav>div>button {
         margin-left: 12px;
+        background-color: #094b58;
     }
     
     .btns-nav {
-        margin-left: 818px;
-        margin-top: -29px;
+        display: flex;
     }
